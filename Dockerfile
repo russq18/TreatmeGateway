@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
-EXPOSE 5099
+EXPOSE 3080
 
-ENV ASPNETCORE_URLS=http://+:5099
+ENV ASPNETCORE_URLS=http://+:3080
 ENV ASPNETCORE_ENVIRONMENT=Development
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
